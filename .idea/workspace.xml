@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5373fded-b3b2-4316-b3be-477e61738278" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_features.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shot-100000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view_data.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +28,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Work/data_process.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.get_features">
-    <configuration name="get_features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.data_process">
+    <configuration name="data_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mds" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -43,12 +40,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Work" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_features.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Work/data_process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -79,9 +76,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.data_process" />
+      <item itemvalue="Python.view_data" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_features" />
+        <item itemvalue="Python.data_process" />
         <item itemvalue="Python.view_data" />
       </list>
     </recent_temporary>
@@ -101,7 +102,9 @@
       <workItem from="1663807306351" duration="7791000" />
       <workItem from="1663834248835" duration="125000" />
       <workItem from="1663834384083" duration="2833000" />
-      <workItem from="1663837277650" duration="801000" />
+      <workItem from="1663837277650" duration="3283000" />
+      <workItem from="1663842420648" duration="903000" />
+      <workItem from="1663843356458" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="Plot all dau signals">
       <created>1662625907893</created>
@@ -110,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662625907893</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete get_data">
+      <created>1663838100247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663838100247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,10 +128,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Plot all dau signals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plot all dau signals" />
+    <MESSAGE value="Complete get_data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete get_data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mds$view_data.coverage" NAME="view_data Coverage Results" MODIFIED="1663812646707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mds$get_features.coverage" NAME="get_features Coverage Results" MODIFIED="1663831216610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mds$get_features.coverage" NAME="data_process Coverage Results" MODIFIED="1663843153985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Work" />
   </component>
 </project>
