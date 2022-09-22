@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def view_data(file, signal, resample=1):
+def view_data(file, signal, resample):
     df = pd.read_csv(file)
     plt.plot(df['Time'][::resample], df[signal][::resample])  # resample the data
 

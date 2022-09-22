@@ -3,6 +3,7 @@ import numpy as np
 import scipy.signal as sig
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
 
 def get_signals( shot, tree='east_1', resample=100, *signals,):
     """return time and data of corresponding resampled signals  """
@@ -39,17 +40,29 @@ def save_signals(shots,tree,resample,*signals):
         file_name = os.path.join(file_path,'shot'+str(shot)+'.csv')
         df.to_csv(file_name)
 
-def visualize_signals(*files):
+def visualize_files(*filenames):
     """Assertion: the time of all the file must have the same length"""
-    for file in files:
-        pass
+    for filename in filenames:
+        df = pd.read_csv(filename)
+        x = df['Time1']
 
-shots = range(100000,100020)
-# shots = [100000]
-signals = ['DAU'+str(i+1) for i in range(13)]
-resample = 100
-tree = 'east_1'
-save_signals(shots,tree,resample,*signals)
+    # Note that even in the OO-style, we use `.pyplot.figure` to create the Figure.
+        fig, ax = plt.subplots(figsize=[10, 6], layout='constrained')
+        for i in range(1, 14):
+            signal = 'DAU' + str(i)
+            ax.plot(x, df[signal], label=signal)
+        plt.show()
+# shots = range(100000,100020)
+# # shots = [100000]
+# signals = ['DAU'+str(i+1) for i in range(13)]
+# resample = 100
+# tree = 'east_1'
+# save_signals(shots,tree,resample,*signals)
 
+# Visualize shot[100000:100020]
+path = os.path.join('..','data','resample100')
+filenames = ['shot'+str(100000+i) for i in range(20)]
+filenames = [os.path.join(path,filename+'.csv') for filename in filenames]
+visualize_files(filenames[0])
 
 
