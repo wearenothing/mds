@@ -49,7 +49,7 @@ def visualize_files(*filenames):
     # Note that even in the OO-style, we use `.pyplot.figure` to create the Figure.
         fig, ax = plt.subplots(figsize=[10, 6], layout='constrained')
         for i in range(1, 14):
-            signal = 'DAU' + str(i)
+            signal = 'DAU' + str(i) #TODO: should not only work for DAU signals
             ax.plot(x, df[signal], label=signal)
         plt.show()
 # shots = range(100000,100020)
