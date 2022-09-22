@@ -4,6 +4,8 @@ import scipy.signal as sig
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
 
 def get_signals( shot, tree='east_1', resample=100, *signals,):
     """return time and data of corresponding resampled signals  """
@@ -40,7 +42,7 @@ def save_signals(shots,tree,resample,*signals):
         file_name = os.path.join(file_path,'shot'+str(shot)+'.csv')
         df.to_csv(file_name)
 
-def visualize_files(*filenames):
+def visualize_files(*filenames,save=False):
     """Assertion: the time of all the file must have the same length"""
     for filename in filenames:
         df = pd.read_csv(filename)
@@ -51,6 +53,14 @@ def visualize_files(*filenames):
         for i in range(1, 14):
             signal = 'DAU' + str(i) #TODO: should not only work for DAU signals
             ax.plot(x, df[signal], label=signal)
+        ax.set_xlabel('Time')  # Add an x-label to the axes.
+        ax.set_ylabel('Value')  # Add a y-label to the axes.
+        ax.set_title(filename[-14:-4]+" DAU signals")  # Add a title to the axes.
+        ax.legend()  # Add a legend.
+        # if save is true, save the graph
+        if save:
+            path = os.path.join('..','figs','')
+            plt.savefig(path+filename[-14:-4]+'.png')
         plt.show()
 # shots = range(100000,100020)
 # # shots = [100000]
@@ -60,9 +70,9 @@ def visualize_files(*filenames):
 # save_signals(shots,tree,resample,*signals)
 
 # Visualize shot[100000:100020]
-path = os.path.join('..','data','resample100')
-filenames = ['shot'+str(100000+i) for i in range(20)]
-filenames = [os.path.join(path,filename+'.csv') for filename in filenames]
-visualize_files(filenames[0])
+# path = os.path.join('..','data','resample100')
+# filenames = ['shot'+str(100000+i) for i in range(20)]
+# filenames = [os.path.join(path,filename+'.csv') for filename in filenames]
+# visualize_files(*filenames,save=True)
 
 

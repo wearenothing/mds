@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b216965f-6d5f-42f0-9e35-5e7f2216f3b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,6 +28,7 @@
   </component>
   <component name="ProjectId" id="2F7jNSFj91vZyhv7Ps33cisQ0tu" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -83,6 +87,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.plot_test" />
+      <item itemvalue="Python.data_process" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.data_process" />
@@ -118,7 +126,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Ready to test visualize_files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mds$view_data.coverage" NAME="view_data Coverage Results" MODIFIED="1663812646707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mds$plot_test.coverage" NAME="plot_test Coverage Results" MODIFIED="1663852991954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
-    <SUITE FILE_PATH="coverage/mds$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1663853014964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
+    <SUITE FILE_PATH="coverage/mds$get_features.coverage" NAME="data_process Coverage Results" MODIFIED="1663843153985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Work" />
+    <SUITE FILE_PATH="coverage/mds$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1663855008103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
   </component>
 </project>
