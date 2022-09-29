@@ -62,6 +62,7 @@ def visualize_files(*filenames,save=False):
             path = os.path.join('..','figs','')
             plt.savefig(path+filename[-14:-4]+'.png')
         plt.show()
+
 # shots = range(100000,100020)
 # # shots = [100000]
 # signals = ['DAU'+str(i+1) for i in range(13)]
@@ -75,4 +76,6 @@ def visualize_files(*filenames,save=False):
 # filenames = [os.path.join(path,filename+'.csv') for filename in filenames]
 # visualize_files(*filenames,save=True)
 
-
+time,vldl1=get_signals(100000,'east_1',1,'vldl1')
+plt.plot(time,vldl1)
+plt.show()
