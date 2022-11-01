@@ -76,6 +76,13 @@ def visualize_files(*filenames,save=False):
 # filenames = [os.path.join(path,filename+'.csv') for filename in filenames]
 # visualize_files(*filenames,save=True)
 
-time,vldl1=get_signals(100000,'east_1',1,'vldl1')
-plt.plot(time,vldl1)
-plt.show()
+
+# Normalize signals to see
+times,signals=get_signals(110061,'east_1',1,'vldl1','LIIU2','DAU4')
+print(len(times[0]))
+print(len(times[1]))
+# plt.plot(times[0],signals[0],label='vldl1')
+# plt.plot(times[1],signals[1],label= 'LIIU2')
+# plt.plot(times[2],signals[2],label= 'DAU4')
+# plt.legend()
+# plt.show()
