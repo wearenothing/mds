@@ -1,10 +1,8 @@
 import MDSplus as mds
 import numpy as np
-import scipy.signal as sig
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 
 def get_signals( shot, tree='east_1', resample=100, *signals,):
@@ -64,11 +62,13 @@ def visualize_files(*filenames,save=False):
         plt.show()
 
 # shots = range(100000,100020)
-# # shots = [100000]
+# shots = [100000]
 # signals = ['DAU'+str(i+1) for i in range(13)]
 # resample = 100
 # tree = 'east_1'
-# save_signals(shots,tree,resample,*signals)
+# times,datas = get_signals(100000,tree,1,*signals)
+# # save_signals(shots,tree,resample,*signals)
+# print(len(times[0]))
 
 # Visualize shot[100000:100020]
 # path = os.path.join('..','data','resample100')
